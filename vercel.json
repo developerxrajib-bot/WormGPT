@@ -8,6 +8,11 @@
   ],
   "routes": [
     {
+      "src": "/chat",
+      "methods": ["POST", "OPTIONS"],
+      "dest": "app.py"
+    },
+    {
       "src": "/(.*)",
       "dest": "app.py"
     }
